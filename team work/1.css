@@ -1,0 +1,243 @@
+.header-container {
+    transition: all 0.5s;
+    background: lightyellow;
+}
+
+.header-top {
+    padding: 0px 0px 8px 0px;
+    background-color: lightyellow;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.welcome {
+    text-align: left;
+    display: inline-block;
+    padding: 20px;
+    margin: 0px 14px 0px 0px;
+    font-size: 25px;
+    color: rgb(248, 143, 44);
+    vertical-align: top;
+    margin-top: 8px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#dropdown_pics {
+    height: 15px;
+}
+
+.logoimg img {
+    height: 300px;
+    padding-left: 35%;
+}
+
+.login {
+    float: right;
+    padding: 0px;
+    margin: 0px 20px 0px 0px;
+    font-size: 25px;
+    color: rgb(251, 255, 252);
+    vertical-align: top;
+    margin-top: 8px;
+    position: absolute;
+    top: 0;
+    right: 0
+}
+
+.lonbutton {
+    color: rgb(255, 170, 58);
+    background-color: lightyellow;
+    border: 0px;
+    font-size: 14pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.lonbutton:hover {
+    color: lightseagreen;
+    outline: none;
+    border: none;
+}
+
+.order,
+.del {
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    margin: 10px;
+}
+
+
+/*-------------- search -----------*/
+
+#search {
+    width: 440px;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: rgb(112, 112, 112);
+    margin-left: 10px;
+}
+
+.searchbar {
+    border: rgb(218, 218, 218) solid 1px;
+    border-radius: 2em;
+    width: 552px;
+    height: 42px;
+    box-shadow: 0px 0px 5px rgb(212, 212, 212);
+    margin: 0 auto;
+}
+
+#search,
+.mcp,
+.mg {
+    vertical-align: middle;
+}
+
+#search {
+    width: 440px;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: rgb(112, 112, 112);
+    margin-left: 10px;
+}
+
+.searchbar {
+    border: rgb(218, 218, 218) solid 1px;
+    border-radius: 2em;
+    width: 552px;
+    height: 42px;
+    box-shadow: 0px 0px 5px rgb(212, 212, 212);
+    margin: 0 auto;
+}
+
+.mcp {
+    height: 35px;
+}
+
+.mg {
+    height: 25px;
+    margin-left: 15px;
+}
+
+#search,
+.mcp,
+.mg {
+    vertical-align: middle;
+}
+
+
+/*-------------- nav -----------*/
+
+.nav-line {
+    text-align: center;
+}
+
+a {
+    color: darkslategray;
+}
+
+.dropbtn {
+    background-color: greenyellow;
+    color: darkslategray;
+    padding: 15px;
+    font-size: 20px;
+    border: rgb(255, 255, 255);
+    text-align: center;
+    width: 120px;
+    border-radius: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+    color: darkslategray;
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddf572;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: lightyellow;
+}
+
+
+/*-------------- pics -----------*/
+
+#BJ {
+    text-align: center;
+}
+
+#img {
+    width: 1000px;
+    height: 600px;
+}
+
+#ol {
+    position: absolute;
+    bottom: -150px;
+    width: 100%;
+    text-align: center;
+    right: 0px;
+}
+
+li img {
+    height: 25px;
+}
+
+
+/*----------- Sections -----------*/
+
+li {
+    list-style: none;
+    text-align: center;
+    font-size: 18pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#guide img {
+    height: 160px;
+    width: 170px;
+}
+
+
+/*----------- bottom pics -----------*/
+
+.demo {
+    text-align: center;
+}
+
+
+/*-------------- footer -----------*/
+
+footer {
+    background-color: lightyellow;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
