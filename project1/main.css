@@ -1,0 +1,110 @@
+body{
+    background-color: #ffffff;
+}
+
+header img{
+    height: 250px;
+    width: 1350px; 
+    padding:2%;
+}
+
+nav {
+    text-align: right;
+    padding: 5px;
+    background-color: #fcd7e8;
+    font-size: 20pt;
+    font-style: italic;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #fdfafb;
+    background-color: #fafafa;
+  }
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(70, 70, 70);
+    text-align: center;
+    padding: 15px 16px;
+    text-decoration: none;
+  }
+  
+li a:hover:not(.active) {
+    background-color: #fcd7e8;
+}
+ 
+main {
+  font-size: 18pt;
+  color: rgb(44, 43, 43);
+  }
+
+section {
+  font-size: 25pt;
+ }
+
+section img {
+  height: 300px;
+  width: 200px;
+}
+
+img.floater { 
+  float: left;
+  padding: 0 0 20px 20px;
+  } 
+ 
+img.rightfloater { 
+    float: right;
+    height: 300px;
+    width: 200px;
+    padding: 0 0 20px 20px;
+} 
+img.rfloater { 
+  float: right;
+  height: 350px;
+  width: 300px;
+} 
+
+td img{
+  height: 600px;
+  width: 450px;
+  font-size: 13pt;
+  display: grid;
+}
+
+.schedule table{
+  border: 1px solid rgb(83, 82, 82);
+  border-collapse:collapse;
+}
+.schedule tr:first-child{
+  background-color: #fcd7e8;
+}
+
+.schedule td{ 
+  border: 1px solid rgb(190, 186, 186);
+  border-collapse:collapse;
+  text-align:center;
+  line-height:18px; 
+  height:35px;
+  width:110px;
+}
+
+
+
+
+.form input{
+  text-align:left;
+}
+  
+footer {
+    background-color: #fcd7e8;
+    padding: 10px;
+    text-align: right;
+    font-size: 15pt;
+}
