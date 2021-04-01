@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<head>
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="1.css">
+    <link rel="stylesheet" href="2.css">
+    <script src = "scripts/validate.js"></script>
+    <script src = "scripts/form.js"></script>
+    
+    
+</head>
+<header>
+    <div class="header-container"> 
+        <div class="header-top">
+            <div class="lemonimg">
+                <img src="images/logo.jpeg" alt="freshplus_logo">
+                <img src="images/liang.png" alt="banner" id="liang">
+            </div>
+            <div class="login">
+                <ul>
+                    <div class="dropdown">
+                        <button class="lonbutton"><a href="Log_In.html">Sign In</a></button>
+                    </div> 
+                    
+                    <div class="dropdown">
+                        <button class="lonbutton"><a href="Shopping_Cart.html">Shopping Cart</a></button>
+                    </div>
+                </ul>
+            </div>
+                
+                
+                <br>
+                <div class="searchbar">
+                    <img src=images/1.png alt="lemon_icon" class="mg">
+                    <input type="text" id="search" value="Search" 
+                    onfocus="if(value=='Search')value=''"
+                    onblur="if(!value)value='Search'" 
+                    name="keyword"> 
+                    <img src=images/search.png alt="search_icon" class="mcp">
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!----------- nav ----------->
+<nav>
+    <div>
+        <div class="nav-line"> 
+            <ul> 
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="Home.html">Home</a></button>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="Sections.html#Fruits">Fruits</a></button>
+                    <div class="dropdown-content">
+                        <a href="Details.html">Grape</a>
+                        <a href="Details.html">Mangosteen</a>
+                        <a href="Details.html">Lemon</a>
+                    </div>
+                </div>   
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="Sections.html#Vegetables">Vegetables</a></button>
+                    <div class="dropdown-content">
+                        <a href="Details.html">Carrot</a>
+                        <a href="Details.html">Bok Choi</a>
+                        <a href="Details.html">Tomato</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="Sections.html#Meat">Meat</a></button>
+                    <div class="dropdown-content">
+                        <a href="Details.html">Fish</a>
+                        <a href="Details.html">Chicken</a>
+                        <a href="Details.html">Shrimp</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="Sections.html#Condiments">Condiments</a></button>
+                    <div class="dropdown-content">
+                        <a href="Details.html">Olive oil</a>
+                        <a href="Details.html">Soy sauce</a>
+                        <a href="Details.html">Black pepper</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="Sections.html#Drinks">Drinks</a></button>
+                    <div class="dropdown-content">
+                        <a href="Details.html">Apple juice</a>
+                        <a href="Details.html">Fruit tea</a>
+                        <a href="Details.html">Orange juice</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="Sections.html#Dairy">Dairy</a></button>
+                    <div class="dropdown-content">
+                        <a href="Details.html">Milk</a>
+                        <a href="Details.html">Egg</a>
+                        <a href="Details.html">Cheese</a>
+                    </div>
+                </div>    
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<body>
+    <section id="signin">    
+        <div class="first">
+            <h2>
+                <b>Sign In</b>
+            </h2>         
+       
+            <form>
+                <label for="email"><b>Email: </b></label>
+                <input type="email" id="email" name="email">
+                <br>
+                <br>
+                <label for="password"><b>Password: </b></label>
+                <input type="password" id="password" name="password">
+                <br>
+                <br>
+            </form>
+            <button type="button">Sign In</button>
+        </div>       
+    </section>
+
+    <section id="signup">
+        <div class="second">
+            <h2>
+                <b>Create Account<b>
+            </h2>
+            <form>
+                <table>
+                    <tr>
+                      <td>First Name</td>
+                      <td>
+                        <input type = "text" name = "firstName" id = "firstName">
+                        <span id = "fnameWarning" class = "alert"></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Last Name</td>
+                      <td>
+                        <input type = "text" name = "lastName" id = "lastName">
+                        <span id = "lnameWarning" class = "alert"></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Email Address</td>
+                      <td>
+                        <input type="email" name="email" id="email" >
+                        <span id = "emailWarning" class = "alert"></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Password</td>
+                      <td>
+                        <input type="password" id="password" name="password">
+                        <span id = "passwordWarning" class = "alert"></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Address 1</td>
+                      <td>
+                        <input type = "text" name = "address1" id = "address1">
+                        <span id = "address1Warning" class = "alert"></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Address 2</td>
+                      <td>
+                        <input type = "text" name = "address2" id = "address2">      
+                      </td>
+                    </tr>
+                    <tr>
+                    <tr>
+                      <td>Postal Code</td>
+                      <td>
+                        <input type = "text" name = "postalcode" id = "postalcode">
+                        <span id = "postalcodeWarning" class = "alert"></span>
+                      </td>
+                    </tr> 
+                </table>
+            </form>
+            <br>
+            <input type = "submit" id = "button">
+            <br><br>
+            <input type = "reset" id = "button">
+        </div>       
+        
+        
+    </section>
+
+    <!-- <footer>
+        <h2>Fresh Plus+</h2>
+        <Address>
+            123 Fresh Ave
+            <br>
+            Ottawa, Ontario
+            <br>
+            (613) 123-PLUS
+            <br>
+            <a href="mailto:freshplus@superfresh.ca">freshplus@superfresh.ca</a>  
+        </Address>
+    </footer>  -->
+  
+</body>
+</html>
+
+
+
