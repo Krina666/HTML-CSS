@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Changqi Li">
+    <meta name="email" content="li000716@algonquinlive.com ">
+    <style type="text/css">
+        .calculator {
+            width: 320px;
+            height: 420px;
+            text-align: center;
+            margin-top: 30px;
+            background-color: gray;
+        }
+        
+        .display {
+            background-color: orange;
+            width: 290px;
+            height: 40px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 25px;
+            text-align: right;
+            margin: auto;
+            padding-top: 20px;
+        }
+        
+        button {
+            width: 60px;
+            height: 60px;
+            margin-top: 20px;
+            margin-left: 5px;
+            margin-right: 5px;
+            font-size: 30px;
+            font-weight: bold;
+            background: white;
+            border: none;
+            color: black;
+            cursor: pointer;
+        }
+    </style>
+    <title>Very Simple Calculator</title>
+</head>
+
+<body>
+    <div class="calculator">
+        <div><br></div>
+        <div class="display">0</div>
+        <div>
+            <button value="7" onclick="pressNumber(7);">7</button>
+            <button value="8" onclick="pressNumber(8);">8</button>
+            <button value="9" onclick="pressNumber(9);">9</button>
+            <button value="-" onclick="pressOper('-');">-</button><br>
+
+            <button value="4" onclick="pressNumber(4);">4</button>
+            <button value="5" onclick="pressNumber(5);">5</button>
+            <button value="6" onclick="pressNumber(6);">6</button>
+            <button value="/" onclick="pressOper('/');">/</button><br>
+
+            <button value="1" onclick="pressNumber(1);">1</button>
+            <button value="2" onclick="pressNumber(2);">2</button>
+            <button value="3" onclick="pressNumber(3);">3</button>
+            <button value="x" onclick="pressOper('x');">x</button><br>
+
+            <button value="0" onclick="pressOper(0);">0</button>
+            <button value="c" onclick="clearSreen();">c</button>
+            <button value="=" onclick="pressSolve();">=</button>
+            <button value="+" onclick="pressOper('+');">+</button>
+        </div>
+
+    </div>
+    <script>
+        let firstNumber = 0;
+        temp = 0;
+        list = [];
+
+        function pressNumber(numberPressed) {
+
+
+            console.log(firstNumber);
+
+            var display = document.getElementsByClassName('display');
+            var currentNum = display[0].innerHTML;
+
+
+            if (currentNum == 0) {
+                display[0].innerHTML = numberPressed;
+            } else {
+                if (firstNumber == 0) { 
+                    display[0].innerHTML = currentNum + numberPressed; 
+
+
+                   
+                } else {
+
+                    if (temp == 0) {
+                        display[0].innerHTML = numberPressed;
+                        temp = 1;
+                    } else {
+                        display[0].innerHTML = display[0].innerHTML + numberPressed;
+
+                    }
+                    secondNumber = display[0].innerHTML; 
+                   
+                    console.log('secondNumber=' + secondNumber);
+                 
+
+                }
+
+            }
+        }
+
+        function pressSolve() {
+            var display = document.getElementsByClassName('display');
+            var currentNum = display[0].innerHTML;
+            if (operator == "x") {
+                operator = "*";
+            }
+            result = eval(firstNumber + operator + secondNumber);
+
+            display[0].innerHTML = result;
+            firstNumber = 0;
+            secondNumber = 0;
+            operator = "";
+
+        }
+
+        function clearSreen() {
+            var display = document.getElementsByClassName('display');
+            display[0].innerHTML = 0;
+            firstNumber = 0;
+            secondNumber = 0;
+            operator = "";
+        }
+
+        function pressOper(oper) {
+            var display = document.getElementsByClassName('display');
+            firstNumber = display[0].innerHTML;
+            operator = oper;
+
+
+        }
+    </script>
+
+
+</body>
+
+</html>
