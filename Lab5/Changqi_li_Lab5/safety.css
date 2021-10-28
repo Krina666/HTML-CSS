@@ -1,0 +1,23 @@
+body{
+    background-color:#D9E8E2;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+nav{
+    background-color:#338267;
+    padding: 10px;
+}
+
+
+img{
+    height: 300px;
+    width: 400px;
+ 
+}
+
+main{
+    font-size: 13pt;
+    display: grid;
+    
+}

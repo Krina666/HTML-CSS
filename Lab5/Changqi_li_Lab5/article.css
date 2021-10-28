@@ -1,0 +1,27 @@
+body{
+    background-color:#D9E8E2;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+nav{
+    background-color:#338267;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    font-size: 24px;
+    text-indent:54px;
+}
+
+li:target{
+    background-color: #80B1A0;
+}
+
+li {
+    font-size: 18px;
+}

@@ -1,0 +1,21 @@
+body{
+    background-color:#D9E8E2;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+img{
+    margin-left: 25%;
+    width: 50%;
+}
+
+nav{
+    background-color:#338267;
+    padding: 10px;
+}
+
+section {
+    font-size: 16pt;
+    text-align: center;
+   }
+
