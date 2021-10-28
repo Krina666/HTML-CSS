@@ -1,0 +1,77 @@
+#coname {
+    position: absolute;
+    }
+
+main {
+    font-size: 20pt;
+}
+
+img.rightfloater { 
+    float: right;
+    padding: 0 0 20px 20px;
+    }    
+
+img.leftfloater { 
+    float: left;
+    padding: 0 0 20px 20px;
+    }    
+
+footer img { 
+    height: 25px; 
+    padding-right: 10px; 
+    float: left; 
+    }
+
+
+
+
+nav, footer, nav a, footer a {
+    background-color: #133854;
+    color: white;
+    font-size: 12pt;
+}
+
+nav {
+    text-align: center;
+    padding: 10px;
+}     
+
+section {
+    font-size: 16pt;
+   }
+
+section img {
+    height: 200px;
+  
+    }
+
+footer {
+    text-align: right;
+    padding: 10px;
+}
+
+address {
+    font-style: normal;
+}
+
+
+.schedule table{
+    border: 1px solid black;
+    border-collapse:collapse;
+}
+.schedule tr:first-child{
+    background-color: cornflowerblue;
+}
+
+.schedule td{ 
+    border: 1px solid black;
+    border-collapse:collapse;
+    text-align:center;
+    line-height:18px; 
+    height:30px;
+    width:110px;
+}
+
+.form input{
+    text-align:left;
+}
